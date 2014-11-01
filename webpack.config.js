@@ -25,7 +25,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.coffee$/, loader: "coffee-loader"},
+      {test: /\.coffee$/, loader: 'coffee-loader!' + __dirname + '/lib/coffee-react-transform-loader.coffee'},
 
       // shims
       {test: /baconjs/, loader: 'imports?jQuery=jquery'},
